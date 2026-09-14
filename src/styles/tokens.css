@@ -1,0 +1,27 @@
+:root {
+  --bg: #070809;
+  --bg-elev: #101214;
+  --bg-panel: #0c0e10;
+  --ink: #f3eee4;
+  --muted: #9b968c;
+  --line: rgba(243, 238, 228, 0.12);
+  --line-strong: rgba(243, 238, 228, 0.22);
+  --acid: #c6f13d;
+  --acid-ink: #12140a;
+  --acid-dim: rgba(198, 241, 61, 0.14);
+  --cyan: #3ee0e6;
+  --cyan-dim: rgba(62, 224, 230, 0.12);
+  --warn: #e8c36a;
+  --font-display: 'Syne', 'Arial Narrow', 'Helvetica Neue', sans-serif;
+  --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+  --header-h: 4.35rem;
+  --max: 1160px;
+  --wide: 1280px;
+  --radius: 2px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-motion='off'] {
+  --motion: 0;
+}

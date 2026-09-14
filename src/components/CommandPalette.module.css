@@ -1,0 +1,64 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(7, 8, 9, 0.72);
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  padding: 12vh 1rem 2rem;
+}
+
+.dialog {
+  width: min(100%, 34rem);
+  border: 1px solid var(--line-strong);
+  background: #0d0f11;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.9rem 1rem;
+  outline: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem;
+  max-height: 22rem;
+  overflow: auto;
+}
+
+.item,
+.active {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  padding: 0.7rem 0.75rem;
+}
+
+.active,
+.item:hover {
+  background: var(--acid-dim);
+}
+
+.hint {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.empty {
+  padding: 1rem;
+  color: var(--muted);
+}

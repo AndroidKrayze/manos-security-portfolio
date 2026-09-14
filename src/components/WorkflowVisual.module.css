@@ -1,0 +1,89 @@
+.root {
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(16, 18, 20, 0.92), rgba(7, 8, 9, 0.92));
+  padding: 1rem 1rem 1.15rem;
+  min-height: 100%;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.mode {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  min-height: 2.25rem;
+  padding: 0.3rem 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.mode[aria-selected='true'] {
+  color: var(--acid-ink);
+  background: var(--acid);
+  border-color: var(--acid);
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin: 0.75rem 0 0;
+}
+
+.legend div {
+  min-width: 0;
+}
+
+.legend dt {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--acid);
+}
+
+.legend dd {
+  margin: 0.15rem 0 0;
+  color: var(--ink);
+  font-size: 0.85rem;
+}
+
+.note {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  max-width: 42rem;
+}
+
+@media (max-width: 720px) {
+  .legend {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.caption {
+  margin-top: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}

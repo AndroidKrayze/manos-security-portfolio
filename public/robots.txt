@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://androidkrayze.github.io/manos-security-portfolio/sitemap.xml

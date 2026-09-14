@@ -1,0 +1,13 @@
+.wrap {
+  position: relative;
+  display: block;
+}
+
+.ghost {
+  visibility: hidden;
+}
+
+.live {
+  position: absolute;
+  inset: 0;
+}

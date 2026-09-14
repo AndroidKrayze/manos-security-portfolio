@@ -1,0 +1,23 @@
+.block {
+  display: grid;
+  gap: 1rem;
+  max-width: 38rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+.email {
+  font-family: var(--font-mono);
+  color: var(--acid);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
