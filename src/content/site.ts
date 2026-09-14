@@ -159,7 +159,7 @@ export const workCases = [
 export const products = {
   nexxsecure: {
     name: 'NexxSecure',
-    status: 'Product under development',
+    status: 'In production',
     role: 'Creator',
     href: 'https://www.nexxsecure.co.uk/',
     hrefLabel: 'Visit NexxSecure',
@@ -168,10 +168,10 @@ export const products = {
   },
   postqure: {
     name: 'PostQure',
-    status: 'Product under development',
+    status: 'In production',
     role: 'Creator',
-    href: null,
-    hrefLabel: 'Discuss this project',
+    href: 'https://postqure.com',
+    hrefLabel: 'Visit PostQure',
     lede: 'A post-quantum cryptography readiness product: TLS discovery, certificate inventory, cryptographic classification and a path into migration planning.',
     note: 'Readiness is not a completed post-quantum deployment, and this illustration does not claim a cryptographic break. Inventory data is synthetic.',
   },

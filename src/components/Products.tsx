@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import { products, profile } from '../content/site'
+import { products } from '../content/site'
 import styles from './Products.module.css'
 
 const NexxSecureDemo = lazy(() =>
@@ -17,8 +17,8 @@ export function Products() {
           <p className="kicker">Products</p>
           <h2 id="products-title">Things I am building.</h2>
           <p className="muted">
-            I am the creator of both. They are products under development. The illustrations are local
-            and labelled as sample workflows.
+            I am the creator of both. They are in production. The illustrations on this page are local
+            sample workflows, not live customer data.
           </p>
         </div>
         <div className={styles.stack}>
@@ -49,10 +49,7 @@ export function Products() {
               <p className={styles.lede}>{products.postqure.lede}</p>
               <p className={styles.note}>{products.postqure.note}</p>
               <div className={styles.actions}>
-                <a
-                  className="btn btn-ghost"
-                  href={`mailto:${profile.email}?subject=${encodeURIComponent('Discuss PostQure')}`}
-                >
+                <a className="btn btn-ghost" href={products.postqure.href} target="_blank" rel="noreferrer">
                   {products.postqure.hrefLabel}
                 </a>
               </div>
