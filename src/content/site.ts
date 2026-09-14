@@ -325,14 +325,6 @@ export const timeline = [
       'Platform API automation, secure delivery tooling, and assessment work that had to become engineering practice.',
   },
   {
-    period: 'Earlier',
-    org: 'Mind The Hack AI · Blyce / BearingPoint Caribbean · Endeavour · Push Doctor',
-    title: 'Security, consulting and software development',
-    emphasis: 'Software',
-    summary:
-      'A path through offensive security, consultancy delivery and product engineering — the combination this site is built on.',
-  },
-  {
     period: 'May 2024 — Jul 2024',
     org: 'Mind The Hack AI',
     title: 'Security Engineer / Lead Operations',
