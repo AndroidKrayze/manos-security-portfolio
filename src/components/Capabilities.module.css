@@ -23,6 +23,22 @@
   gap: 0.4rem;
 }
 
+.card .inline {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.inline li {
+  border: 1px solid var(--line);
+  padding: 0.28rem 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink);
+}
+
 @media (max-width: 720px) {
   .grid {
     grid-template-columns: 1fr;

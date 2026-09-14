@@ -11,7 +11,7 @@ export function Timeline() {
         </div>
         <ol className={styles.list}>
           {timeline.map((item) => (
-            <li key={item.org} className={styles.item}>
+            <li key={`${item.period}-${item.org}`} className={styles.item}>
               <div>
                 <p className={styles.period}>{item.period}</p>
                 <span className={styles.emphasis}>{item.emphasis}</span>

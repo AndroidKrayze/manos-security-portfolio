@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { CommandPalette } from './components/CommandPalette'
 import { Capabilities } from './components/Capabilities'
+import { Certifications } from './components/Certifications'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
@@ -55,6 +56,7 @@ export default function App() {
         <Products />
         <Timeline />
         <Capabilities />
+        <Certifications />
         <Contact />
       </main>
       <Footer />

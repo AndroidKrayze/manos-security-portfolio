@@ -332,6 +332,38 @@ export const timeline = [
     summary:
       'A path through offensive security, consultancy delivery and product engineering — the combination this site is built on.',
   },
+  {
+    period: 'May 2024 — Jul 2024',
+    org: 'Mind The Hack AI',
+    title: 'Security Engineer / Lead Operations',
+    emphasis: 'Offensive',
+    summary:
+      'Security assessments across web, network, cloud and OT; AI-assisted testing workflows; AWS and Azure reviews; Purview DLP with Sentinel and ServiceNow; SCADA/ICS and MITRE ATT&CK-aligned reporting.',
+  },
+  {
+    period: 'Apr 2023 — Nov 2024',
+    org: 'Blyce / BearingPoint Caribbean',
+    title: 'Security Tester / Security Engineer',
+    emphasis: 'Government',
+    summary:
+      'Vulnerability management, CIS and DISA STIG baselines, CVE lifecycle work with Tenable.io and Qualys, GPO hardening, and Microsoft Purview DLP integrated with Sentinel for government and tax administration clients.',
+  },
+  {
+    period: 'May 2019 — Apr 2022',
+    org: 'Endeavour',
+    title: 'Offensive Security Engineer / Security Tester',
+    emphasis: 'Offensive',
+    summary:
+      'Web, API, cloud and IAM testing; AI/ML security reviews; Purview and Defender for Cloud Apps controls; mentoring and workshops. Engagements included work for Red Bull, Coca-Cola, Audi Netherlands and Mercedes-Benz.',
+  },
+  {
+    period: 'Jan 2017 — Jan 2018',
+    org: 'Push Doctor',
+    title: 'Lead Android Developer',
+    emphasis: 'Healthcare',
+    summary:
+      'Android engineering and mobile security for a UK digital healthcare platform: authentication and storage reviews, Stripe with PCI DSS-aligned controls, and Java/Kotlin API integrations in a GDPR-compliant environment.',
+  },
 ] as const
 
 export const capabilities = [
@@ -344,6 +376,9 @@ export const capabilities = [
       'Sensitive-data and vulnerability workflows',
       'Architecture and integration against existing platforms',
       'Evidence, ownership and SLA-shaped delivery',
+      'DSPM and sensitive-data discovery programmes',
+      'CVE remediation across containerised and distributed systems',
+      'Secure-by-design architecture and ARB/PtB alignment',
     ],
   },
   {
@@ -354,6 +389,9 @@ export const capabilities = [
       'Monitoring and alerting integrations',
       'Workflow logic between discovery, ticketing and owners',
       'Operational and audit data retrieval',
+      'Scanning pipelines and automated incident generation',
+      'Terraform, GitHub Actions and Azure DevOps CI/CD',
+      'Microsoft Graph API and Microsoft 365 tenant audit automation',
     ],
   },
   {
@@ -364,6 +402,9 @@ export const capabilities = [
       'Semgrep, SonarQube, Gitleaks, Trivy, DefectDojo',
       'PowerShell audit frameworks',
       'Connecting consultancy findings to engineering practice',
+      'CIS Benchmarks and DISA STIG baseline builds',
+      'Windows GPO hardening and hardened VM templates',
+      'ISO 27001, SOX and GDPR control evidence',
     ],
   },
   {
@@ -376,6 +417,106 @@ export const capabilities = [
       'Product design for cryptographic readiness (PostQure)',
     ],
   },
+  {
+    id: 'secops',
+    title: 'Security operations',
+    items: [
+      'Defender XDR, Microsoft Sentinel, SIEM, XDR and SOAR',
+      'SOC interface, incident response and threat hunting',
+      'Ransomware readiness and board-level cyber exercises',
+      'Detection engineering and centralised alerting',
+    ],
+  },
+  {
+    id: 'data',
+    title: 'Data protection',
+    items: [
+      'BigID, DSPM and Microsoft Purview',
+      'DLP, classification, discovery and retention',
+      'Data governance across Exchange, SharePoint, OneDrive and Teams',
+      'Auto-labelling and regulatory mapping',
+    ],
+  },
+  {
+    id: 'identity',
+    title: 'Identity and access',
+    items: [
+      'CyberArk PAM/PIM',
+      'Entra ID / Azure AD, MFA, SSO and Conditional Access',
+      'RBAC, joiner-mover-leaver and access reviews',
+      'Privileged-account discovery and lateral-movement path review',
+    ],
+  },
+  {
+    id: 'cloud',
+    title: 'Cloud and DevSecOps',
+    items: [
+      'Azure and AWS security reviews',
+      'Zscaler ZIA/ZPA',
+      'Kubernetes, Docker and container security',
+      'Terraform, Azure DevOps, GitHub Actions and CI/CD gates',
+    ],
+  },
+  {
+    id: 'software',
+    title: 'Software engineering',
+    items: [
+      'Python, PowerShell, Java and Kotlin',
+      'Vue.js, React, FastAPI and Spring Boot',
+      'REST APIs and Microsoft Graph API',
+      'Android engineering and mobile security',
+    ],
+  },
+  {
+    id: 'offensive',
+    title: 'Offensive security',
+    items: [
+      'Web, API, Active Directory and cloud testing',
+      'Red teaming and MITRE ATT&CK-aligned reporting',
+      'IDOR, business logic, Nuclei and custom scan templates',
+      'SCADA/ICS, AI/ML security and authorized agent-surface testing',
+    ],
+  },
+] as const
+
+export const certifications = [
+  'CompTIA Security+',
+  'OSCP training and Offensive Security coursework',
+  'Hack The Box — advanced offensive security labs',
+  'AWS Security Specialty knowledge',
+  'ISO 27001 Lead Auditor knowledge',
+] as const
+
+export const platforms = [
+  'CyberArk',
+  'Zscaler',
+  'BigID',
+  'Microsoft Purview',
+  'Microsoft Sentinel',
+  'Defender XDR',
+  'Defender for Cloud Apps',
+  'ServiceNow',
+  'Tenable.io',
+  'Tenable.ot',
+  'Qualys',
+  'Nessus',
+  'Terraform',
+  'Azure DevOps',
+  'GitHub Actions',
+  'Docker',
+  'Kubernetes',
+  'Semgrep',
+  'SonarQube',
+  'Gitleaks',
+  'Trivy',
+  'DefectDojo',
+  'Nuclei',
+  'Python',
+  'PowerShell',
+  'Vue.js',
+  'React',
+  'FastAPI',
+  'Spring Boot',
 ] as const
 
 export const paletteCommands = [
@@ -383,6 +524,7 @@ export const paletteCommands = [
   { id: 'nav-products', label: 'Products', hint: 'Section', href: '#products', kind: 'section' },
   { id: 'nav-experience', label: 'Experience', hint: 'Section', href: '#experience', kind: 'section' },
   { id: 'nav-capabilities', label: 'Capabilities', hint: 'Section', href: '#capabilities', kind: 'section' },
+  { id: 'nav-certifications', label: 'Certifications', hint: 'Section', href: '#certifications', kind: 'section' },
   { id: 'nav-contact', label: 'Contact', hint: 'Section', href: '#contact', kind: 'section' },
   { id: 'link-email', label: 'Email Manos', hint: 'androidkrayze@gmail.com', href: 'mailto:androidkrayze@gmail.com', kind: 'link' },
   {
