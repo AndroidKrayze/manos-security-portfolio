@@ -26,6 +26,7 @@ export const meta = {
 }
 
 export const nav = [
+  { id: 'precis', href: '#precis', label: 'Precis' },
   { id: 'work', href: '#work', label: 'Work' },
   { id: 'products', href: '#products', label: 'Products' },
   { id: 'experience', href: '#experience', label: 'Experience' },

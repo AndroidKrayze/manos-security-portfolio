@@ -22,6 +22,9 @@ export function Hero({ motionEnabled }: HeroProps) {
             <a className="btn btn-primary" href="#work">
               Explore my work
             </a>
+            <a className="btn btn-ghost" href="#precis">
+              Covering precis
+            </a>
             <a className="btn btn-ghost" href="#contact">
               Get in touch
             </a>
