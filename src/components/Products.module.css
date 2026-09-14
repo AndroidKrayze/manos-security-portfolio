@@ -23,6 +23,12 @@
     var(--bg-panel);
 }
 
+.rift {
+  background:
+    linear-gradient(135deg, rgba(232, 195, 106, 0.1), transparent 40%),
+    var(--bg-panel);
+}
+
 .status {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -33,6 +39,17 @@
 
 .postq .status {
   color: var(--cyan);
+}
+
+.rift .status,
+.rift .path {
+  color: var(--warn);
+}
+
+.rift .stepActive {
+  color: #1a1408;
+  background: var(--warn);
+  border-color: var(--warn);
 }
 
 .title {

@@ -175,6 +175,15 @@ export const products = {
     lede: 'A post-quantum cryptography readiness product: TLS discovery, certificate inventory, cryptographic classification and a path into migration planning.',
     note: 'Readiness is not a completed post-quantum deployment, and this illustration does not claim a cryptographic break. Inventory data is synthetic.',
   },
+  agentrift: {
+    name: 'AgentRift',
+    status: 'UAT',
+    role: 'Creator',
+    href: null,
+    hrefLabel: 'Discuss this project',
+    lede: 'Authorized AI-agent security testing: map a public agent chat front end, enumerate relevant CVE classes, scan the agreed surface and turn findings into exploit cases for a scoped assessment.',
+    note: 'In user-acceptance testing. This page does not scan, attack or exploit anything. Sample data only. Work is for authorized engagements against systems you own or have written permission to test.',
+  },
 } as const
 
 export const nexxSample = {
@@ -247,6 +256,57 @@ export const postqureSample = {
   ],
 } as const
 
+export const agentriftSample = {
+  label: 'Interactive illustration',
+  path: ['Map the chat surface', 'Enumerate CVE classes', 'Scan the agreed scope', 'Package exploit cases'],
+  stages: [
+    {
+      id: 'discover',
+      title: 'Map chat',
+      detail:
+        'Sample target: a public support-agent widget. The illustration records the chat endpoint, tools the widget exposes and whether the surface is reachable without an account.',
+    },
+    {
+      id: 'enumerate',
+      title: 'Enumerate',
+      detail:
+        'Sample step: match the widget’s libraries and agent patterns to known CVE classes. No live vulnerability feed is queried from this page.',
+    },
+    {
+      id: 'scan',
+      title: 'Scan',
+      detail:
+        'Sample step: run authorized checks against the agreed chat surface — prompt injection, tool-argument handling and data-exfil paths — inside a written scope.',
+    },
+    {
+      id: 'exploit',
+      title: 'Exploit cases',
+      detail:
+        'Sample output: a finding pack with reproduction notes for the authorizing team. Exploit cases stay in the assessment report; they are not executed from this site.',
+    },
+  ],
+  findings: [
+    {
+      surface: 'chat.example-corp.invalid',
+      class: 'Tool-argument injection',
+      cveClass: 'Mapped class · sample',
+      stage: 'Open',
+    },
+    {
+      surface: 'support.example-corp.invalid',
+      class: 'Prompt injection via widget',
+      cveClass: 'Known class · sample',
+      stage: 'Review',
+    },
+    {
+      surface: 'assist.example-corp.invalid',
+      class: 'Unauthenticated agent tools',
+      cveClass: 'Exposure class · sample',
+      stage: 'Scoped',
+    },
+  ],
+} as const
+
 export const timeline = [
   {
     period: 'Dec 2025 — Jul 2026',
@@ -280,6 +340,7 @@ export const capabilities = [
     title: 'Security engineering',
     items: [
       'Control design from assessment findings',
+      'Authorized testing of exposed AI-agent chat surfaces (AgentRift)',
       'Sensitive-data and vulnerability workflows',
       'Architecture and integration against existing platforms',
       'Evidence, ownership and SLA-shaped delivery',
@@ -324,6 +385,13 @@ export const paletteCommands = [
   { id: 'nav-capabilities', label: 'Capabilities', hint: 'Section', href: '#capabilities', kind: 'section' },
   { id: 'nav-contact', label: 'Contact', hint: 'Section', href: '#contact', kind: 'section' },
   { id: 'link-email', label: 'Email Manos', hint: 'androidkrayze@gmail.com', href: 'mailto:androidkrayze@gmail.com', kind: 'link' },
+  {
+    id: 'link-agentrift',
+    label: 'Discuss AgentRift',
+    hint: 'UAT · authorized agent testing',
+    href: 'mailto:androidkrayze@gmail.com?subject=Discuss%20AgentRift',
+    kind: 'link',
+  },
   { id: 'link-github', label: 'GitHub', hint: 'AndroidKrayze', href: 'https://github.com/AndroidKrayze', kind: 'link' },
   { id: 'link-linkedin', label: 'LinkedIn', hint: 'mgpentest', href: 'https://www.linkedin.com/in/mgpentest', kind: 'link' },
 ] as const
