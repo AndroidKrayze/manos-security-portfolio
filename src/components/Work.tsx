@@ -2,9 +2,15 @@ import { workCases } from '../content/site'
 import {
   AccessDiagram,
   ApiDiagram,
+  BigIdDiagram,
+  CloudDeployDiagram,
+  CyberArkDiagram,
+  KubeDiagram,
+  Layer7Diagram,
   OwnershipDiagram,
   PipelineDiagram,
   PriorityDiagram,
+  TerraformDiagram,
 } from './WorkDiagrams'
 import styles from './Work.module.css'
 
@@ -14,6 +20,12 @@ const diagrams = {
   api: ApiDiagram,
   access: AccessDiagram,
   pipeline: PipelineDiagram,
+  layer7: Layer7Diagram,
+  terraform: TerraformDiagram,
+  kube: KubeDiagram,
+  bigid: BigIdDiagram,
+  cyberark: CyberArkDiagram,
+  cloud: CloudDeployDiagram,
 }
 
 export function Work() {

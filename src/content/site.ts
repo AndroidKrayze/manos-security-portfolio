@@ -154,7 +154,114 @@ export const workCases = [
       'Puts findings back into the pipeline: detect earlier, track them in one place, and give engineers a path to close them.',
     diagram: 'pipeline',
   },
+  {
+    id: 'layer7',
+    kicker: 'Northern Trust',
+    title: 'Layer 7 load balancing and anti-DDoS',
+    problem:
+      'Application traffic needed a owned Layer 7 control plane: load balancing, anti-DDoS protection and a migration path that could be deployed without losing operational continuity.',
+    contribution:
+      'I owned Layer 7 load balancers and anti-DDoS protection. I was the primary EMEA engineering resource for Layer 7 deployments, coordinating changes, troubleshooting with US teams and vendors, and keeping the service in a state operations could run.',
+    stage: 'Operational ownership of Layer 7 load balancing and anti-DDoS through migration and BAU.',
+    value:
+      'Turns application-layer availability and volumetric / application-layer abuse into an engineering service, not a ticket queue.',
+    diagram: 'layer7',
+  },
+  {
+    id: 'terraform',
+    kicker: 'Northern Trust',
+    title: 'Terraform and infrastructure as code',
+    problem:
+      'Security and platform changes still depended on manual console work, which made deployments harder to repeat, review and evidence.',
+    contribution:
+      'I used Terraform to define and deploy infrastructure and security-related configuration as code, so changes could be reviewed, repeated and handed over instead of living in one person’s session.',
+    stage: 'Engineering practice on Azure and AWS deployments I owned.',
+    value:
+      'Moves security technology toward auditable engineering: the same definition that deploys the control can be tested and evidenced.',
+    diagram: 'terraform',
+  },
+  {
+    id: 'kubectl',
+    kicker: 'Northern Trust',
+    title: 'Kubernetes image upgrades',
+    problem:
+      'Container workloads needed controlled image upgrades without turning every release into an unowned outage risk.',
+    contribution:
+      'I owned kubectl-driven image upgrade work: planning the change, applying it across the agreed workloads, and checking the rollout so engineering and security stayed aligned on what was running.',
+    stage: 'Hands-on operational ownership of image upgrade activity.',
+    value:
+      'Keeps CVE and image hygiene as an engineering motion — upgrade, verify, leave a trail — rather than a spreadsheet of stale tags.',
+    diagram: 'kube',
+  },
+  {
+    id: 'bigid-impl',
+    kicker: 'Northern Trust',
+    title: 'BigID implementation and PI / PII remediation portal',
+    problem:
+      'Sensitive-data discovery only pays off if someone owns the implementation and findings can be driven to owners as remediable work, not unread reports.',
+    contribution:
+      'I owned the BigID implementation. I also built a custom remediation portal on the BigID API so PI and PII findings could be owned, tracked and driven to remediation rather than sitting in the scanner.',
+    stage: 'Implementation ownership plus custom API-driven portal work for PI and PII findings.',
+    value:
+      'Connects discovery to action: the same API that holds the finding can drive who owns it and what happens next.',
+    diagram: 'bigid',
+  },
+  {
+    id: 'cyberark',
+    kicker: 'Northern Trust',
+    title: 'CyberArk privileged access',
+    problem:
+      'Privileged access had to sit in a controlled vaulted model, not as standing credentials on the side of engineering work.',
+    contribution:
+      'I worked with CyberArk so privileged access for the engineering and security work I owned went through PAM rather than unmanaged local practice.',
+    stage: 'Hands-on CyberArk use on the programmes I owned.',
+    value:
+      'Keeps privileged work inside a vaulted, reviewable path — the same standard a regulated estate expects of everyone else.',
+    diagram: 'cyberark',
+  },
+  {
+    id: 'cloud-deploy',
+    kicker: 'Northern Trust',
+    title: 'Azure and AWS deployments',
+    problem:
+      'Security platforms and remediation tooling had to land in real cloud estates, not only in design decks.',
+    contribution:
+      'I owned deployments on Azure and AWS for the security engineering work I was running — planning the landing, taking the change through and staying with it into operation.',
+    stage: 'Hands-on cloud deployment ownership across Azure and AWS.',
+    value:
+      'Makes architecture something you can stand up, not only describe.',
+    diagram: 'cloud',
+  },
 ] as const
+
+export const precis = {
+  kicker: 'Covering precis',
+  title: 'Where this background is most useful.',
+  intro:
+    'I am strongest where network and infrastructure security has to be engineered, automated and owned — not administered as a set of appliances. That is the shape of a Principal Security Engineer mandate: take architecture and control requirements through design, implementation and operational service, and make the team around it faster rather than slower.',
+  points: [
+    {
+      title: 'Layer 7, DDoS and application traffic',
+      body: 'I owned Layer 7 load balancers and anti-DDoS protection, and I was the EMEA engineering point of contact for Layer 7 migration and deployments. That is direct experience of application-layer controls, east-west / north-south traffic and keeping a live service through change.',
+    },
+    {
+      title: 'WAF and security-platform APIs',
+      body: 'On a consulting engagement I used Imperva APIs to automate policy and configuration, pull operational and audit data, and integrate monitoring. I treat WAF and DDoS technology as an engineering problem — APIs, standards, change control — not as a console to click through. I do not claim ownership of a whole WAF estate or a DDoS consolidation programme I did not run.',
+    },
+    {
+      title: 'Micro-segmentation and discovery access',
+      body: 'I used Illumio with BigID so scanners could reach selected internal databases for discovery. That is workload-aware access and segmentation in service of a data programme, not a slide about Zero Trust.',
+    },
+    {
+      title: 'Automation, Terraform and Kubernetes',
+      body: 'I use Terraform for infrastructure as code, kubectl for image upgrades I owned, and vendor APIs for repeatable security change. The point is auditable engineering: Python, PowerShell, REST, Git, CI/CD — security as code, not as a ticket.',
+    },
+    {
+      title: 'Data platforms, cloud and privileged access',
+      body: 'I owned the BigID implementation and a custom remediation portal on the BigID API for PI and PII findings. I owned Azure and AWS deployments for that work, and I worked with CyberArk so privileged access stayed vaulted. That is hybrid-cloud security engineering with operational ownership in a regulated environment.',
+    },
+  ],
+} as const
 
 export const products = {
   nexxsecure: {
@@ -424,6 +531,7 @@ export const capabilities = [
     title: 'Data protection',
     items: [
       'BigID, DSPM and Microsoft Purview',
+      'BigID implementation ownership and API-driven PI / PII remediation',
       'DLP, classification, discovery and retention',
       'Data governance across Exchange, SharePoint, OneDrive and Teams',
       'Auto-labelling and regulatory mapping',
@@ -447,6 +555,9 @@ export const capabilities = [
       'Zscaler ZIA/ZPA',
       'Kubernetes, Docker and container security',
       'Terraform, Azure DevOps, GitHub Actions and CI/CD gates',
+      'kubectl-driven image upgrades',
+      'Azure and AWS deployments I owned',
+      'Layer 7 load balancing and anti-DDoS protection',
     ],
   },
   {
@@ -512,6 +623,7 @@ export const platforms = [
 ] as const
 
 export const paletteCommands = [
+  { id: 'nav-precis', label: 'Covering precis', hint: 'Section', href: '#precis', kind: 'section' },
   { id: 'nav-work', label: 'Selected work', hint: 'Section', href: '#work', kind: 'section' },
   { id: 'nav-products', label: 'Products', hint: 'Section', href: '#products', kind: 'section' },
   { id: 'nav-experience', label: 'Experience', hint: 'Section', href: '#experience', kind: 'section' },

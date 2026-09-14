@@ -7,6 +7,7 @@ import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Positioning } from './components/Positioning'
+import { Precis } from './components/Precis'
 import { Products } from './components/Products'
 import { Timeline } from './components/Timeline'
 import { Work } from './components/Work'
@@ -52,6 +53,7 @@ export default function App() {
       <main id="main">
         <Hero motionEnabled={motionEnabled} />
         <Positioning />
+        <Precis />
         <Work />
         <Products />
         <Timeline />
